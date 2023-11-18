@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:backgroundTint="#00BCD4"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/txtTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:layout_marginTop="50dp"
+    android:paddingBottom="10dp"
+    android:text="Dashboard"
+    android:textAlignment="center"
+    android:textColor="#2196F3"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:layout_marginBottom="10dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <!-- android:numColumns=2 is the number of columns for Grid View
+             android:horizontalSpacing is the space between horizontal grid items -->
+        <GridView
+            android:id="@+id/idGVcourses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="12dp"
+            android:numColumns="2"
+            android:verticalSpacing="14dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
